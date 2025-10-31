@@ -1,0 +1,5 @@
+{
+  "name": "Naufel Bakers",
+  "description": "A modern, elegant, and warm responsive website for Naufel Bakers, showcasing their menu, gallery, and story. Features dynamically generated Google reviews using the Gemini API.",
+  "requestFramePermissions": []
+}
