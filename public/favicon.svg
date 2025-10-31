@@ -1,0 +1,9 @@
+
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill="#4A2C2A">
+  <style>
+    .text {
+      font: bold 60px 'Playfair Display', serif;
+    }
+  </style>
+  <text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" class="text">NB</text>
+</svg>
