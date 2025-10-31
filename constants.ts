@@ -9,6 +9,10 @@ export const NAV_LINKS = [
   { name: 'Contact', href: '#contact' },
 ];
 
+export const WHATSAPP_MESSAGE = "Hello Naufel Bakers, I'd like to inquire about an order.";
+export const WHATSAPP_URL = `https://wa.me/919154786835?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
+
+
 export const MENU_ITEMS: MenuItem[] = [
   // Cakes
   { name: 'Chocolate Truffle Cake', description: 'A decadent and rich chocolate cake, a house specialty.', price: '₹700 (1/2kg)', category: MenuCategory.Cakes, image: 'https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg', alt: 'Decadent chocolate truffle cake with a glossy ganache topping.' },

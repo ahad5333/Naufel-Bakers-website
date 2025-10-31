@@ -1,4 +1,5 @@
 import React from 'react';
+import { WHATSAPP_URL } from '../constants';
 
 const Hero: React.FC = () => {
   const handleMenuClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
@@ -29,13 +30,23 @@ const Hero: React.FC = () => {
         <p className="text-lg md:text-2xl max-w-3xl mx-auto mb-8 [text-shadow:_1px_1px_4px_rgba(0,0,0,0.4)]">
           Experience the warmth and delight of handcrafted pastries, breads, and cakes made with love.
         </p>
-        <a 
-          href="#menu"
-          onClick={handleMenuClick}
-          className="bg-accent text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-opacity-90 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
-        >
-          View Our Menu
-        </a>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a 
+            href="#menu"
+            onClick={handleMenuClick}
+            className="bg-accent text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-opacity-90 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl w-full sm:w-auto"
+          >
+            View Our Menu
+          </a>
+           <a 
+            href={WHATSAPP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-transparent border-2 border-accent text-accent px-8 py-3 rounded-full text-lg font-semibold hover:bg-accent hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl w-full sm:w-auto"
+          >
+            Order Online
+          </a>
+        </div>
       </div>
     </section>
   );

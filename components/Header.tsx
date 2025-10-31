@@ -1,13 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { NAV_LINKS } from '../constants';
+import { NAV_LINKS, WHATSAPP_URL } from '../constants';
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeLink, setActiveLink] = useState(NAV_LINKS[0].href);
-
-  const whatsappMessage = "Hello Naufel Bakers, I'd like to inquire about an order.";
-  const whatsappUrl = `https://wa.me/919154786835?text=${encodeURIComponent(whatsappMessage)}`;
 
   // Handles smooth scrolling to the section
   const handleNavClick = (event: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -91,7 +88,7 @@ const Header: React.FC = () => {
           </div>
           <div className="hidden md:block">
             <a
-              href={whatsappUrl}
+              href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-accent text-white px-4 py-2 rounded-full hover:bg-opacity-90 transition-all duration-300 shadow-sm"
@@ -139,7 +136,7 @@ const Header: React.FC = () => {
             ))}
             <div className="px-3 pt-2">
                  <a
-                  href={whatsappUrl}
+                  href={WHATSAPP_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full text-center block bg-accent text-white px-4 py-2 rounded-full hover:bg-opacity-90 transition-all duration-300 shadow-sm"
