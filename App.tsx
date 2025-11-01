@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 
 const App: React.FC = () => {
   return (
+    
     <div className="bg-cream text-brown-dark font-sans">
       <Header />
       <main>

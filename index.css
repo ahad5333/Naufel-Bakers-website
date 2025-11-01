@@ -2,3 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
+/* Hide the scrollbar but keep scrolling enabled */
+html, body {
+  overflow-y: scroll; /* ensure scrolling works */
+}
+
+/* Firefox */
+html {
+  scrollbar-width: thin;       /* "auto" or "thin" */
+  scrollbar-color: transparent transparent; /* thumb and track */
+}
+
+/* Chrome, Safari, Edge */
+html::-webkit-scrollbar {
+  width: 8px;                  /* width of scrollbar */
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;     /* track is transparent */
+}
+
+html::-webkit-scrollbar-thumb {
+  background: transparent;     /* thumb is transparent */
+  border-radius: 4px;          /* optional rounded thumb */
+}
+
+
