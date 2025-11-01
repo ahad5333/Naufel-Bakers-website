@@ -24,10 +24,10 @@ const Hero: React.FC = () => {
       <img src="https://images.pexels.com/photos/8963453/pexels-photo-8963453.jpeg" alt="Baker's hands carefully dusting flour over fresh dough on a dark, rustic surface" className="absolute inset-0 w-full h-full object-cover"/>
       
       <div className="relative z-10 p-4 text-cream">
-        <h1 className="text-6xl md:text-8xl font-serif font-bold tracking-tight mb-4 [text-shadow:_2px_2px_8px_rgba(0,0,0,0.5)]">
+        <h1 className="text-6xl md:text-8xl font-serif font-bold tracking-tight mb-4 [text-shadow:_2px_2px_8px_rgba(0,0,0,0.5)] text-black">
           Baking Happiness Every Day
         </h1>
-        <p className="text-lg md:text-2xl max-w-3xl mx-auto mb-8 [text-shadow:_1px_1px_4px_rgba(0,0,0,0.4)]">
+        <p className="text-lg md:text-2xl max-w-3xl mx-auto mb-8 [text-shadow:_1px_1px_4px_rgba(0,0,0,0.4)] text-black">
           Experience the warmth and delight of handcrafted pastries, breads, and cakes made with love.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -38,14 +38,7 @@ const Hero: React.FC = () => {
           >
             View Our Menu
           </a>
-           <a 
-            href={WHATSAPP_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-transparent border-2 border-accent text-accent px-8 py-3 rounded-full text-lg font-semibold hover:bg-accent hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl w-full sm:w-auto"
-          >
-            Order Online
-          </a>
+           
         </div>
       </div>
     </section>

@@ -27,12 +27,11 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                     <h3 className="text-xl font-semibold text-brown-dark">Contact Info</h3>
-                    <p className="mt-2 text-brown-light">Phone: (+91) 91547 86835</p>
-                    <p className="mt-1 text-brown-light">Email: hello@naufelbakers.com</p>
+                    <p className="mt-2 text-brown-light">Phone: (+91) 7671073675</p>
                 </div>
                 <div>
                     <h3 className="text-xl font-semibold text-brown-dark">Opening Hours</h3>
-                    <p className="mt-2 text-brown-light">Monday - Sunday: 10:00 AM - 10:00 PM</p>
+                    <p className="mt-2 text-brown-light">Monday - Sunday: 9:00 AM - 12:00 PM</p>
                 </div>
             </div>
             <div className="rounded-lg overflow-hidden shadow-lg h-80">

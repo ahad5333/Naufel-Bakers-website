@@ -5,14 +5,23 @@ import { MenuCategory, MenuItem } from '../types';
 
 const MenuItemCard: React.FC<{ item: MenuItem }> = ({ item }) => (
   <div className="bg-cream rounded-lg shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300">
-    <img className="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-500 ease-in-out" src={item.image} alt={item.alt} />
-    <div className="p-6">
-      <h3 className="text-xl font-serif font-bold text-brown-dark">{item.name}</h3>
-      <p className="mt-2 text-brown-light text-sm flex-grow">{item.description}</p>
-      <p className="mt-4 text-lg font-semibold text-accent">{item.price}</p>
-    </div>
+  {/* Image container with padding */}
+  <div className="p-2 flex items-center justify-center bg-white">
+    <img
+      src={item.image}
+      alt={item.alt}
+      className="w-full h-48 object-contain rounded-md"
+    />
   </div>
+
+  {/* Card content */}
+  <div className="p-6">
+    <h3 className="text-xl font-serif font-bold text-brown-dark">{item.name}</h3>
+    <p className="mt-2 text-brown-light text-sm flex-grow">{item.description}</p>
+  </div>
+</div>
 );
+
 
 const Menu: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<MenuCategory>(MenuCategory.Cakes);

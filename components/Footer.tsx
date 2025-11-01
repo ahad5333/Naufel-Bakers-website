@@ -39,11 +39,10 @@ const Footer: React.FC = () => {
                 <ul className="mt-4 space-y-4 text-base text-gray-300">
                   <li>
                     H NO 5-6-134/2/A, beside RELAINCE SMART POINT,<br/>
-                    Teachers Colony, Mahabubnagar,<br/>
+                    Jadcherla, Mahabubnagar,<br/>
                     Telangana 509001, India
                   </li>
-                  <li>(+91) 91547 86835</li>
-                  <li>hello@naufelbakers.com</li>
+                  <li>(+91) 7671073675</li>
                 </ul>
               </div>
             </div>
@@ -52,7 +51,7 @@ const Footer: React.FC = () => {
                     <h3 className="text-sm font-semibold text-gray-200 tracking-wider uppercase">Hours</h3>
                     <ul className="mt-4 space-y-4 text-base text-gray-300">
                       <li>Monday - Sunday</li>
-                      <li>10:00 AM - 10:00 PM</li>
+                      <li>9:00 AM - 11:00 PM</li>
                     </ul>
                 </div>
             </div>
