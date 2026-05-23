@@ -1,0 +1,31 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+@keyframes waveMoveLeft {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+
+@keyframes waveMoveRight {
+  0% { transform: translate3d(-50%, 0, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+
+.animate-wave-left-slow {
+  animation: waveMoveLeft 25s linear infinite;
+}
+
+.animate-wave-right-mid {
+  animation: waveMoveRight 20s linear infinite;
+}
+
+.animate-wave-left-fast {
+  animation: waveMoveLeft 14s linear infinite;
+}
